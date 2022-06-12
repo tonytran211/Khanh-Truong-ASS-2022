@@ -55,7 +55,7 @@ function showWorks(works){
         result +=`
         <div class='md:flex md:items-start md:w-full md:ml-3 md:border-b-2 border-purple-400 md:pb-3'>
         <div class="mt-5">
-        <a href='../html/work_detail.html?name=${work.name}'>
+        <a href='./src/html/work_detail.html?name=${work.name}'>
         <div class="flex justify-center w-full md:w-auto md:block">
           <img class="h-[230px] md:h-[180px] md:w-[246px]" src="${work.img}" alt="" />
         </div>
@@ -63,7 +63,7 @@ function showWorks(works){
       </div>
 
       <!-- text work -->
-      <a href='../html/work_detail.html?name=${work.name}'>
+      <a href='./src/html/work_detail.html?name=${work.name}'>
       <div class="pb-3 border-b-2 border-blue-200 mx-9 md:border-b-0 lg:max-w-[600px] md:max-w-[400px]">
         <h3 class="mt-3 text-2xl font-bold md:text-3xl hover:underline delay-75">${work.name}</h3>
         <div class="flex items-center mt-3">
@@ -89,10 +89,10 @@ document.getElementById('works').innerHTML = showWorks(worksList);
 
 // redirect blog 
 document.querySelector('#blog').addEventListener('click', () => {
-  window.location.href = '../html/blog.html'
+  window.location.href = './src/html/blog.html'
 })
 
 //redirect work
 document.querySelector('#work').addEventListener('click',() => {
-  window.location.href = '../html/work.html'
+  window.location.href = './src/html/work.html'
 })

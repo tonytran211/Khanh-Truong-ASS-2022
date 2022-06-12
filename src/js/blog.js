@@ -58,7 +58,7 @@ document.getElementById('blogs').innerHTML = showBlog(blogList);
 
 // redirect home 
 document.querySelector('#home').addEventListener('click', function() {
-    window.location.href = '../html/index.html';
+    window.location.href = '../../index.html';
 });
 
 // redirect work 
