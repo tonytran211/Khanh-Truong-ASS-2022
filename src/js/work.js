@@ -89,5 +89,5 @@ document.querySelector('#blog').addEventListener('click',() => {
 
 //back to home
 document.querySelector('#home').addEventListener('click',() => {
-  window.location.href = '../html/home.html'
+  window.location.href = '../html/index.html'
 })
