@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Khanh Truong</title>
+  <link rel="icon"
+    href="https://res.cloudinary.com/dfdwvhljw/image/upload/v1654271164/Assignment_WEB2022/avatar_e2vyp6.jpg"
+    type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .animation::after{
+        content:'';
+        background: linear-gradient( to right, black, purple);
+        height: 3px;
+        width:0;
+        left:0;
+        bottom: 5px;
+        transition: .3s;
+        position: absolute;
+      }
+
+      .animation:hover::after{
+        width: 100%;
+      }
+
+      .animationone::after{
+        content:'';
+        background: linear-gradient( to right, black, purple);
+        height: 3px;
+        width:0;
+        left:0;
+        bottom: 5px;
+        transition: .3s;
+        position: absolute;
+      }
+
+      .animationone:hover::after{
+        width:75%;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- btn-menu -->
+  <div class="relative flex flex-row-reverse border-b-2 border-purple-400 mobile-btn md:hidden" onclick="showMenu()">
+    <svg xmlns="http://www.w3.org/2000/svg" class="relative w-12 h-12 p-2" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </div>
+
+  <!-- menu  -->
+  <div class="absolute hidden w-full md:relative md:w-full md:flex md:justify-end" id="menu">
+    <ul class="text-xl font-bold text-center text-white bg-black md:bg-white md:flex">
+      <li id='home' class="py-5 cursor-pointer active:text-purple-400 md:hover:text-purple-500 md:px-5 md:text-black md:animation md:relative">
+        Home
+      </li>
+      <li class="py-5 text-purple-500 cursor-pointer md:px-5 active:text-white md:animation md:relative">Blog</li>
+      <li id="works" class="py-5 cursor-pointer active:text-purple-400 md:hover:text-purple-500 md:px-5 md:text-black md:animation md:relative">
+        Works
+      </li>
+      <li class="py-5 cursor-pointer active:text-purple-400 md:hover:text-purple-500 md:px-5 md:text-black md:pr-16 md:animationone md:relative">
+        Contact
+      </li>
+    </ul>
+  </div>
+
+  <div class="mx-3 md:mx-auto mt-7 md:flex md:flex-col md:max-w-3xl">
+    <h2 class="first-letter:uppercase md:text-[44px] text-3xl font-bold md:mb-5">
+      blog
+    </h2>
+  </div>
+  <!-- content-js -->
+  <div class="mx-3 md:flex md:flex-col md:items-center">
+    <!-- change js  -->
+    <div id="blogs"></div>
+    <!-- <div class="mt-5 md:max-w-3xl">
+              <h3 class="text-[26px] font-medium md:text-3xl">UI Interactions of the week</h3>
+              <div class="flex mt-3 leading-3">
+                  <p class="pr-5 border-r-2 border-black">12 Feb 2019</p>
+                  <p class="pl-5">Express, Handlebars</p>
+              </div>
+              <p class="pb-6 mt-4 border-b-2 border-purple-400">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div> -->
+  </div>
+
+  <!-- footer -->
+  <div class="flex flex-col items-center footer mt-[8em]">
+    <ul class="flex">
+      <li class="px-4 pb-7">
+        <img src="https://res.cloudinary.com/dfdwvhljw/image/upload/v1654390873/Assignment_WEB2022/fb_blgvoh.png"
+          alt="" />
+      </li>
+      <li class="px-4 pb-7">
+        <img src="https://res.cloudinary.com/dfdwvhljw/image/upload/v1654390873/Assignment_WEB2022/insta_wlwmbb.png"
+          alt="" />
+      </li>
+      <li class="px-4 pb-7">
+        <img src="https://res.cloudinary.com/dfdwvhljw/image/upload/v1654390873/Assignment_WEB2022/Group_spoxxo.png"
+          alt="" />
+      </li>
+      <li class="px-4 pb-7">
+        <img src="https://res.cloudinary.com/dfdwvhljw/image/upload/v1654390873/Assignment_WEB2022/Linkedin_oni29d.png"
+          alt="" />
+      </li>
+    </ul>
+    <p class="pb-12 text-sm">Copyright ©2020 All rights reserved</p>
+  </div>
+
+  <script src="../js/blog.js"></script>
+</body>
+
+</html>

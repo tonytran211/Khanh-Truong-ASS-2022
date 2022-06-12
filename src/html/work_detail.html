@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work-detail | Khanh Truong</title>
+  <link rel="icon"
+    href="https://res.cloudinary.com/dfdwvhljw/image/upload/v1654271164/Assignment_WEB2022/avatar_e2vyp6.jpg"
+    type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .animation::after{
+        content:'';
+        background: linear-gradient( to right, black, purple);
+        height: 3px;
+        width:0;
+        left:0;
+        bottom: 5px;
+        transition: .3s;
+        position: absolute;
+      }
+
+      .animation:hover::after{
+        width: 100%;
+      }
+
+      .animationone::after{
+        content:'';
+        background: linear-gradient( to right, black, purple);
+        height: 3px;
+        width:0;
+        left:0;
+        bottom: 5px;
+        transition: .3s;
+        position: absolute;
+      }
+
+      .animationone:hover::after{
+        width: 70%;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+    <div class="relative flex justify-end mb-10 border-b-2 border-purple-400 btn-menu md:hidden"
+    onclick="showMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 p-2" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </div>
+
+  <!-- menu  -->
+  <div
+    class="absolute w-full top-[50px] hidden md:relative md:w-full md:flex md:justify-end md:top-0"
+    id="menu">
+    <ul class="text-xl font-bold text-center text-white bg-black md:bg-white md:flex">
+      <a href="../html/home.html">
+        <li id="home"
+          class="py-5 cursor-pointer active:text-purple-400 md:hover:text-purple-500 md:px-5 md:text-black md:relative md:animation">
+          Home
+        </li>
+      </a>
+      <a href="../html/blog.html">
+        <li id="blog"
+          class="py-5 text-white cursor-pointer md:text-black md:px-5 active:text-purple-400 md:hover:text-purple-500 md:animation md:relative">
+          Blog
+        </li>
+      </a>
+
+      <a href="../html/work.html">
+        <li class="py-5 text-purple-500 cursor-pointer md:px-5 md:animation md:relative">Works</li>
+      </a>
+      <li
+        class="py-5 cursor-pointer active:text-purple-400 md:hover:text-purple-500 md:px-5 md:text-black md:pr-16 md:animationone md:relative">
+        Contact
+      </li>
+    </ul>
+  </div>
+
+  <!-- content -->
+  <div id="works"></div>
+
+  <!-- <div class="flex flex-col mx-3 mt-8 md:mx-auto md:max-w-4xl">
+    <div class="header">
+      <h3 class="text-3xl font-bold md:text-[34px]">
+        Designing Dashboards with usability in mind
+      </h3>
+    </div>
+
+    <div class="flex mt-8">
+      <p class="px-2 text-white bg-red-400 rounded-xl max-h-7">2020</p>
+      <p class="pl-5 ml-5 text-lg">Dashboard, User Experience Design</p>
+    </div>
+
+    <div class="mt-9">
+      <p>
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+
+    <img class="mt-3"
+      src="https://res.cloudinary.com/dfdwvhljw/image/upload/v1654825120/Assignment_WEB2022/Rectangle_4_bmon9h.png"
+      alt="" />
+
+    <div class="">
+      <h3 class="mt-5 text-3xl font-medium">Heading 1</h3>
+      <h4 class="mt-4 text-2xl font-medium">Heading 2</h4>
+      <p class="mt-4">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+
+    <img class="mt-3"
+      src="https://res.cloudinary.com/dfdwvhljw/image/upload/v1654825188/Assignment_WEB2022/Rectangle_5_fbcqfu.png"
+      alt="" />
+
+    <img class="mt-3"
+      src="https://res.cloudinary.com/dfdwvhljw/image/upload/v1654852613/Assignment_WEB2022/Rectangle_6_1_zikzko.png"
+      alt="" />
+
+    <p class="mt-4">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+      sint. Velit officia consequat duis enim velit mollit. Exercitation
+      veniam consequat sunt nostrud amet.
+    </p>
+  </div> -->
+
+  <!-- footer  -->
+  <div class="flex flex-col items-center footer mt-[3em] border-t-2 border-purple-400">
+    <ul class="flex mt-8">
+      <li class="px-4 pb-7">
+        <img
+          src="https://res.cloudinary.com/dfdwvhljw/image/upload/v1654390873/Assignment_WEB2022/fb_blgvoh.png"
+          alt="" />
+      </li>
+      <li class="px-4 pb-7">
+        <img
+          src="https://res.cloudinary.com/dfdwvhljw/image/upload/v1654390873/Assignment_WEB2022/insta_wlwmbb.png"
+          alt="" />
+      </li>
+      <li class="px-4 pb-7">
+        <img
+          src="https://res.cloudinary.com/dfdwvhljw/image/upload/v1654390873/Assignment_WEB2022/Group_spoxxo.png"
+          alt="" />
+      </li>
+      <li class="px-4 pb-7">
+        <img
+          src="https://res.cloudinary.com/dfdwvhljw/image/upload/v1654390873/Assignment_WEB2022/Linkedin_oni29d.png"
+          alt="" />
+      </li>
+    </ul>
+    <p class="pb-12 text-sm">Copyright ©2020 All rights reserved</p>
+  </div>
+  <script src="../js/work_detail.js"></script>
+</body>
+
+</html>
